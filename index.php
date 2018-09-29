@@ -102,6 +102,5 @@ $a = new product (1, 99.99, 'black gloves', 'very warm gloves for men', 'warm gl
 $a->product_preview();
 $a->porduct_page();
 
-
-
+//check
 ?>
