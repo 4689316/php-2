@@ -1,4 +1,7 @@
 <?php
+
+include ("abstract_class.php"); 
+
 class product {
 	public $id;
 	public $price;
@@ -102,5 +105,25 @@ $a = new product (1, 99.99, 'black gloves', 'very warm gloves for men', 'warm gl
 $a->product_preview();
 $a->porduct_page();
 
-//check
+
+echo "<br><hr>";
+
+$count_good = new countable_good(1, 12.22, 'phone', 'cell phone x', 'eqipment');
+echo "Выручка по товару $count_good->name: ";
+echo $count_good->sales_sum(23);
+
+echo "<br>";
+
+$digit_good = new digital_good(12, 'virtual phone', 'vurtual phone x', 'eqipment', $count_good->price);
+echo "Выручка по цифровому товару $digit_good->name: ";
+echo $digit_good->sales_sum(3);
+
+echo "<br>";
+
+
+$wight_good = new countable_good(2, 2.22, 'salt', 'see salt', 'spices');
+echo "Выручка по товару $wight_good->name: ";
+echo $wight_good->sales_sum(4); // в весовом товаре вместо количества проданных товаров передаем вес проданного товара
+
+
 ?>
