@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../style.css">
+<title>Товар</title>
+</head>
+<body>
+
+<h1>Фото товара</h1>
+
+<a href="/"> To main page</a> <br>
+<a href="/catalog/"> To catalog</a>
+<div >
+	<p>Название фото: {{ content.name }}</p>
+	<p>Просмотров: {{ content.views }}</p>
+	<img src="../{{ content.link }}" alt="{{ content.name }}" class="foto_full">
+	
+</div>
+
+
+</body>
+</html>
