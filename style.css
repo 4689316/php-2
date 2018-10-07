@@ -1,0 +1,19 @@
+.foto_prev {
+	width: 300px;
+	float: left;
+	padding: 20px;
+}
+
+.foto_prev img {
+	max-width: 100%;
+	max-height: 300px;
+}
+
+.foto_prev a:hover {
+	outline: 1px solid grey;
+}
+
+.foto_full {
+	max-width: 800px;
+	max-height: 800px;
+}
